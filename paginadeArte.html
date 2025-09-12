@@ -18,19 +18,20 @@
         }
 
         header {
-            background-color: #8e94f2;
-            padding: 30px 0;
+            background-color: #04052e;
+            padding: 20px 50px;
             text-align: center;
-            box-shadow: 0 2px 4px #8093f1;
+            box-shadow: 0 6px 8px #5900ff;
         }
 
         header h1 {
             font-family: 'Pacifico', cursive;
             font-size: 2.8rem;
-            color: #72ddf7;
+            color: #593fff;
         }
 
         .card {
+        
             border: none;
             border-radius: 15px;
             overflow: hidden;
@@ -57,11 +58,12 @@
         }
 
         footer {
-            text-align: center;
+            border-left: 30px;
             padding: 30px;
+            margin: 30px;
             font-size: 0.85rem;
-            color: #3f3f3f;
-            background-color: #58b0d3;
+            color: #7900b1;
+            background-color: #140152;
         }
     </style>
 </head>
@@ -70,30 +72,30 @@
 
 
     <header>
-        <div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
-            <nav class="navbar bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand">Kamish</a>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </nav>
-        </div>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid" s>
+                <a class="navbar-brand" style="color: #22007c;">Kamish</a>
+                <form class="d-flex" role="search" style="color: #5900ff;">
+                    <input class="form-control me-2" type="buscar" placeholder="Buscar" aria-label="Buscar"
+                        style="color: #5900ff;" />
+                    <button class="btn btn-outline-success" type="submit" style="color: #5900ff;">Buscar</button>
+                </form>
+            </div>
+        </nav>
+
 
         <h1> Tu galeria </h1>
         <p class="texto-descripcion" style="color: #715aff;">Un lugar bonito para compartir lo que te guste</p>
     </header>
 
-    <!-- la Galería -->
+
     <div class="container container-gallery">
         <div class="row g-4">
 
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3" >
+                <div class="card" >
                     <img src="https://tse4.mm.bing.net/th/id/OIP.cciA3kgMbbxpgROz8BW_5wHaFj?pid=Api&P=0&h=180"
-                        class="img-thumbnail" alt="Imagen 1">
+                        class="img-thumbnail" alt="Imagen 1" >
                     <div class="color-pastel"> Modo pastel</div>
                 </div>
             </div>
@@ -101,7 +103,7 @@
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card">
                     <img src="https://www.inabaweb.com/wp-content/uploads/2023/03/Comentarios-en-redes-sociales.png"
-                        class="img-thumbnail" alt="Imagen 2">
+                        class="img-thumbnail" alt="Imagen 2" >
                     <div class="opiniones">Escribiendo tus opiniones</div>
                 </div>
             </div>
@@ -150,7 +152,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <style>
             body {
-                background: #7189ff;
+                background: #02010a;
                 font-family: "Comic Sans MS", cursive
             }
 
@@ -169,7 +171,8 @@
     <body class="text-center p-4">
 
         <h2 class="mb-4" style=" color: blueviolet;"> Tus Dibujos</h2>
-        <button id="drawBtn" class="btn btn-lg btn-pink" style="background:#aeecef;color:rgb(48, 255, 255);">Agregar dibujo</button>
+        <button id="drawBtn" class="btn btn-lg btn-pink" style="background:#22007c;color:rgb(127, 48, 255);">Agregar
+            dibujo</button>
         <canvas id="drawCanvas" class="mt-3"></canvas>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
